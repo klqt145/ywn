@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Seller - Dashboard</title>
+  <link rel="stylesheet" href="admin-dashboard.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">🌿 SageMart Seller</div>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="admin-dashboard.html" class="active">Dashboard</a></li>
+      <li><a href="admin-products.html">Products</a></li>
+      <li><a href="admin-orders.html">Orders</a></li>
+      <li><a href="admin-sales.html">Sales</a></li>
+      <li><a href="index6.html">Logout</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2 class="title">📊 Seller Dashboard</h2>
+
+    <div class="stats">
+      <div class="box stat"><span>💰</span><h3>₱48,250</h3><p>Total Sales</p></div>
+      <div class="box stat"><span>🧾</span><h3>126</h3><p>Total Orders</p></div>
+      <div class="box stat"><span>⏳</span><h3>14</h3><p>Pending Orders</p></div>
+      <div class="box stat"><span>📦</span><h3>38</h3><p>Products Listed</p></div>
+    </div>
+
+    <div class="quick">
+      <a href="admin-products.html" class="btn">➕ Add / Manage Products</a>
+      <a href="admin-orders.html" class="btn">🧾 Manage Orders</a>
+      <a href="admin-sales.html" class="btn">📈 View Sales</a>
+    </div>
+
+    <div class="box">
+      <h3 class="sub">Recent Orders</h3>
+      <table>
+        <tr><th>Order ID</th><th>Customer</th><th>Total</th><th>Status</th></tr>
+        <tr><td>#SM-10245</td><td>Juan Dela Cruz</td><td>₱3,746</td><td><span class="status shipped">Shipped</span></td></tr>
+        <tr><td>#SM-10244</td><td>Maria Santos</td><td>₱1,299</td><td><span class="status pending">Pending</span></td></tr>
+        <tr><td>#SM-10243</td><td>Pedro Reyes</td><td>₱899</td><td><span class="status delivered">Delivered</span></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>© 2026 SageMart. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

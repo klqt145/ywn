@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SageMart - Checkout</title>
+  <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">🌿 SageMart</div>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="cart.html">🛒 Cart</a></li>
+      <li><a href="order-tracking.html">Track Order</a></li>
+      <li><a href="admin-dashboard.html">Seller</a></li>
+      <li><a href="index6.html">Logout</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2 class="title">📦 Checkout</h2>
+
+    <form action="order-tracking.html" class="checkout-layout">
+
+      <div class="box form-box">
+        <h3>Delivery Information</h3>
+
+        <label>Full Name</label>
+        <input type="text" placeholder="Juan Dela Cruz" required>
+
+        <label>Phone Number</label>
+        <input type="text" placeholder="09XX XXX XXXX" required>
+
+        <label>Complete Address</label>
+        <textarea rows="3" placeholder="House No., Street, Barangay, City" required></textarea>
+
+        <h3>Payment Method</h3>
+        <div class="payment">
+          <label><input type="radio" name="pay" checked> 💵 Cash on Delivery</label>
+          <label><input type="radio" name="pay"> 📱 GCash</label>
+          <label><input type="radio" name="pay"> 💳 Credit / Debit Card</label>
+        </div>
+      </div>
+
+      <div class="box summary">
+        <h3>Your Order</h3>
+        <p><span>🎧 Wireless Headphones x1</span><span>₱1,299</span></p>
+        <p><span>👟 Running Shoes x1</span><span>₱1,899</span></p>
+        <p><span>☕ Ceramic Mug x2</span><span>₱498</span></p>
+        <p><span>Shipping</span><span>₱50</span></p>
+        <p class="total"><span>Total</span><span>₱3,746</span></p>
+        <button type="submit" class="btn">✅ Place Order</button>
+      </div>
+
+    </form>
+  </div>
+
+  <footer class="footer">
+    <p>© 2026 SageMart. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

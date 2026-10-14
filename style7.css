@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    background-color: #F5F0E1;
+    font-family: Arial, sans-serif;
+    color: #2F3E2B;
+}
+
+.navbar {
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px 25px;
+    background-color: #B7C9A8;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 0;
+    color: #2F3E2B;
+    font-size: 24px;
+    line-height: 1;
+    font-family: Times New Roman;
+}
+
+nav {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+nav a {
+    color: #FBF8EE;
+    text-decoration: none;
+    padding: 10px 18px;
+    background-color: #6F8A68;
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+    background-color: #FBF8EE;
+    color: #2F3E2B;
+}
+
+.form {
+    width: 90%;
+    max-width: 410px;
+    box-sizing: border-box;
+    background-color: #B7C9A8;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid #8FA880;
+    font-family: Arial;
+}
+
+h2 {
+    text-align: center;
+    color: #2F3E2B;
+    margin-bottom: 15px;
+    font-size: 33px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    background-color: #FBF8EE;
+    border: 1px solid #8FA880;
+    border-radius: 6px;
+    color: #2F3E2B;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    background-color: #6F8A68;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.signin-link,
+.google-link {
+    color: #FBF8EE;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #FBF8EE;
+}
+
+button:hover .signin-link,
+button:hover .google-link {
+    color: #2F3E2B;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+        padding: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    nav a {
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+
+    .form {
+        margin: 25px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        padding: 7px 12px;
+        font-size: 12px;
+    }
+
+    .form {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+}
